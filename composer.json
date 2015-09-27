@@ -1,5 +1,11 @@
 {
   "require": {
     "slim/slim": "2.*"
+  },
+  "autoload": {
+    "classmap": [
+      "app/controllers",
+      "app/models"
+    ]
   }
 }
