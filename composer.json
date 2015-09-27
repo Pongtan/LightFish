@@ -1,4 +1,15 @@
 {
   "require": {
+    "slim/slim": "2.*",
+    "illuminate/database": "*"
+  },
+  "autoload": {
+    "classmap": [
+
+    ],
+    "psr-4": {
+      "App\\Controllers\\": "app/controllers",
+      "App\\Models\\": "app/models"
+    }
   }
 }
