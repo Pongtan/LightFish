@@ -1,10 +1,12 @@
 <?php
 
+namespace App\Controllers;
+
 /**
  *  HomeController
  */
 
-class HomeController extends BaseController
+class HomeController
 {
 
     public function home()
