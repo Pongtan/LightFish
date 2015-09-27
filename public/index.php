@@ -1,5 +1,10 @@
 <?php
-// Autoload 自动载入
-require '../vendor/autoload.php';
-// 路由配置
-require '../config/routes.php';
+
+//  PUBLIC_PATH
+define('PUBLIC_PATH', __DIR__);
+
+// Bootstrap
+require PUBLIC_PATH.'/../bootstrap.php';
+
+// Init slim routes
+require BASE_PATH.'/config/routes.php';
