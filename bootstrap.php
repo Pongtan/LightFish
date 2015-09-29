@@ -8,8 +8,10 @@ define('BASE_PATH', __DIR__);
 // Vendor Autoload
 require BASE_PATH.'/vendor/autoload.php';
 
-// Init Eloquent ORM Connection
+// Init App Config
+$config = require BASE_PATH.'/config/app.php';
 
+// Init Eloquent ORM Connection
 $capsule = new Capsule;
 $capsule->addConnection(require BASE_PATH.'/config/db.php');
 $capsule->bootEloquent();
