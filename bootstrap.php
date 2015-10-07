@@ -10,6 +10,8 @@ require BASE_PATH.'/vendor/autoload.php';
 
 // Init App Config
 $config = require BASE_PATH.'/config/app.php';
+// config time zone
+date_default_timezone_set($config['timeZone']);
 
 // Init Eloquent ORM Connection
 $capsule = new Capsule;

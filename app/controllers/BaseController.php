@@ -2,9 +2,7 @@
 
 namespace App\Controllers;
 
-use Slim\Container;
-use Slim\Views\Twig;
-use Slim\Views\TwigExtension;
+use Smarty;
 
 /**
  * BaseController
@@ -12,24 +10,25 @@ use Slim\Views\TwigExtension;
 
 class BaseController
 {
+
+    public $view;
+
+    public $smarty;
+
     public function construct__(){
 
     }
 
-    public function view(){
-        // Create container
-        $container = new Container;
-        // Register component on container
-        $container['view'] = function ($c) {
-            $view = new Twig(BASE_PATH.'/view/', [
-                'cache' => BASE_PATH.'/storage/framework/views'
-            ]);
-            $view->addExtension(new TwigExtension(
-                $c['router'],
-                $c['request']->getUri()
-            ));
+    public function smarty(){
+        $smarty=new smarty(); //实例化smarty
+        $smarty->settemplatedir(BASE_PATH.'/views/default/'); //设置模板文件存放目录
+        $smarty->setcompiledir(BASE_PATH.'/storage/framework/smarty/compile/'); //设置生成文件存放目录
+        $smarty->setcachedir(BASE_PATH.'/storage/framework/smarty/cache/'); //设置缓存文件存放目录
+        $this->smarty = $smarty;
+        return $smarty;
+    }
 
-            return $view;
-        };
+    public function view(){
+        return $this->smarty();
     }
 }

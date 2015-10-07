@@ -5,8 +5,8 @@
  */
 
 return [
-    'appname'    => 'LightFish',
-    'base_url' => '/',
-    'time_zone' => 'UTC',
+    'appName'    => 'LightFish',
+    'baseUrl' => '/',
+    'timeZone' => 'PRC',  // UTC
     'theme'    => 'default'
 ];

@@ -6,11 +6,12 @@ namespace App\Controllers;
  *  HomeController
  */
 
-class HomeController
+class HomeController extends BaseController
 {
 
     public function home()
     {
-        echo "hello world";
+        return $this->view()->display('index.tpl');
     }
+
 }
