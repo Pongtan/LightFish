@@ -1,12 +1,12 @@
 <?php
 
 /***
- * config app infomation
+ * config app information
  */
 
 return [
     'appName'    => 'LightFish',
     'baseUrl' => '/',
     'timeZone' => 'PRC',  // UTC
-    'theme'    => 'default'
+    'theme'    => 'default',
 ];

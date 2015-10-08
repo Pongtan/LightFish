@@ -24,6 +24,9 @@ class BaseController
         $smarty->settemplatedir(BASE_PATH.'/views/default/'); //设置模板文件存放目录
         $smarty->setcompiledir(BASE_PATH.'/storage/framework/smarty/compile/'); //设置生成文件存放目录
         $smarty->setcachedir(BASE_PATH.'/storage/framework/smarty/cache/'); //设置缓存文件存放目录
+        // add config
+        global $config;
+        $smarty->assign('config',$config);
         $this->smarty = $smarty;
         return $smarty;
     }
