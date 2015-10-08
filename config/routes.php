@@ -1,11 +1,17 @@
 <?php
 
-use Slim\Slim;
+use Slim\App;
 use App\Controllers;
 
-$routes = new Slim();
-$routes->get('/', 'App\Controllers\HomeController:home');
-$routes->get('/hello/:name', function ($name) {
+/***
+ * The slim documents: http://www.slimframework.com/docs/objects/router.html
+ */
+
+$app = new App();
+$app->get('/', 'App\Controllers\HomeController:home');
+$app->get('/hello/:name', function ($name) {
     echo "Hello, $name";
 });
-$routes->run();
+
+// Run Slim Routes for App
+$app->run();
