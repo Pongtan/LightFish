@@ -1,0 +1,24 @@
+application: app
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+  
+- url: /assets/(.*\.(htm$|html$|css$|js$|png$))
+  static_files: public/assets/\1
+  upload: public/assets/(.*\.(htm$|html$|css$|js$|png$))
+  application_readable: true
+
+- url: /.*
+  script: public/index.php
+
+env_variables:
+  debug:  true
+  appName: LightFish
+  authDriver: cookie
+  theme: default
+  timeZone: PRC    
+  db_driver: mysql
+  
+ 
