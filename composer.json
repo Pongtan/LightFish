@@ -1,10 +1,6 @@
 {
   "require": {
-    "slim/slim": "^3.0@RC",
-    "illuminate/database": "*",
-    "slim/twig-view": "~2.0",
-    "slim/csrf": "0.4.*",
-    "smarty/smarty": "~3.1"
+    "pongtan/framework": "dev-master"
   },
   "autoload": {
     "classmap": [
