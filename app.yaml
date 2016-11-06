@@ -20,5 +20,6 @@ env_variables:
   theme: default
   timeZone: PRC    
   db_driver: mysql
+  VIEW_CACHE_PATH: "gs://light-fish.appspot.com/achievotmp/cache/"
   
  
