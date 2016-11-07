@@ -10,7 +10,7 @@ A tiny php framework base on slim.
 The routes config file in: 
 
 ```
-/config/routes.php
+/routes/web.php
 ```
 Read more on [Slim Doc](http://www.slimframework.com/docs/objects/router.html)
 
@@ -19,16 +19,18 @@ Read more on [Slim Doc](http://www.slimframework.com/docs/objects/router.html)
 All Controller in
 
 ```
-/app/Controllers
+/App/Controllers
 ```
 
 ### Views
  
-using Smarty
+using twig.
  
 ### Models
 
+uncomment `bootstrap/app.php` to using Eloquent.
 
 ```
-/app/Models
+// $app->registerEloquent();
 ```
+
