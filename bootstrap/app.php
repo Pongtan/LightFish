@@ -26,6 +26,7 @@ $app = new \Pongtan\App(__DIR__ . '/../');
  * Register Config
  */
 $app->registerConfig();
+$app->registerLang();
 // $app->registerEloquent();
 
 require $basePath . "/routes/web.php";

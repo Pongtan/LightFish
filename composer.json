@@ -1,7 +1,6 @@
 {
   "require": {
-    "pongtan/framework": "^0.0",
-    "umpirsky/twig-php-function": "dev-master"
+    "pongtan/framework": "0.1.*"
   },
   "autoload": {
     "classmap": [

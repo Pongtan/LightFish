@@ -39,7 +39,7 @@
     </div>
 
     <div class="jumbotron">
-        <h1>{{ config('app.appName') }}</h1>
+        <h1>{{ lang('app.name') }}</h1>
         <p class="lead">A Tiny PHP Framework.</p>
         <p><a class="btn btn-lg btn-success" href="https://goo.gl/J1M8Rj" role="button">Github</a></p>
     </div>
