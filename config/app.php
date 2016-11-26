@@ -5,8 +5,12 @@
  */
 
 return [
-    'appName'    => 'LightFish',
+    "name" => "LightFish",
+    'appName' => 'LightFish',
     'baseUrl' => '/',
     'timeZone' => 'PRC',  // UTC
-    'theme'    => 'default'
+    'theme' => 'default',
+
+    'log_level' => env('APP_LOG_LEVEL', 'debug'),
+
 ];
