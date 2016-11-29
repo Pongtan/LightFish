@@ -5,7 +5,7 @@
  */
 
 return [
-    "name" => "LightFish",
+    'name' => 'LightFish',
     'appName' => 'LightFish',
     'baseUrl' => '/',
     'timeZone' => 'PRC',  // UTC
